@@ -1,0 +1,26 @@
+.header {
+  &-secondary {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+  }
+
+  &-search {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+  }
+
+  &-controls {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: end;
+  }
+
+  &-logo {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: center;
+    text-align: center;
+
+    img {
+      max-width: 80px;
+    }
+  }
+}
