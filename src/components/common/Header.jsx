@@ -11,6 +11,8 @@ export default function Header() {
               </a>
             </li>
 
+            <li>|</li>
+
             <li>
               <a href="mailto:office@traidaffairs.com" title="Email us">
                 office@traidaffairs.com
@@ -37,9 +39,10 @@ export default function Header() {
 
         <div className="header-controls">
           <ul className="d-flex gap-4 flex-lg-row-reverse">
-            <li>
+            <li className="position-relative">
               <button type="button" title="Cart">
                 <i className="fa-solid fa-cart-shopping"></i>
+                <span className="d-none d-lg-block cart-quantity">3</span>
               </button>
             </li>
 
