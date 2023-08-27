@@ -48,10 +48,10 @@
       }
 
       .cart-quantity {
-        width: 16px;
         height: 16px;
+        padding: 0 4px;
         background: $brand-primary;
-        border-radius: 50%;
+        border-radius: 30px;
         position: absolute;
         top: -6px;
         right: -6px;
