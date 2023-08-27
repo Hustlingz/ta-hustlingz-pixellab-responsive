@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <div className="footer-primary container mb-4">
-        <div className="footer-primary-inner px-5">
+      <div className="footer-primary mb-4">
+        <div className="footer-primary-inner container">
           <section className="footer-nav">
             <ul>
               <li>
