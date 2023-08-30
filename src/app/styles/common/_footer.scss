@@ -2,11 +2,17 @@
   &-primary {
     background: $main-bg;
     color: $gray-tertiary;
-    padding: 50px 0;
+    font-size: 14px;
     font-weight: 300;
 
     &-inner {
       display: grid;
+
+      @include media-breakpoint-up(lg) {
+        padding: 50px 0 34px 0;
+        background: $main-bg no-repeat right
+          url('./../../../../public/images/banners/banner-06.jpg');
+      }
       grid-template-areas:
         'nav'
         'contact'
@@ -15,8 +21,8 @@
 
       @include media-breakpoint-up(lg) {
         grid-template-areas:
-          'nav nav'
-          'connect contact';
+          'nav nav nav .'
+          'connect contact . .';
       }
     }
   }
@@ -27,6 +33,7 @@
     flex-wrap: wrap;
     row-gap: 50px;
     text-transform: uppercase;
+    width: 100%;
 
     ul {
       width: 50%;
@@ -61,7 +68,6 @@
     p {
       display: flex;
       flex-direction: column;
-      font-size: 14px;
       line-height: 18px;
 
       span:last-child {
@@ -78,7 +84,6 @@
       display: flex;
       gap: 30px;
       text-transform: uppercase;
-      font-size: 14px;
 
       i[class*='fa-'] {
         display: block;
@@ -100,7 +105,6 @@
     color: $gray-primary;
 
     p:first-child {
-      font-size: 14px;
       line-height: 18px;
     }
   }
