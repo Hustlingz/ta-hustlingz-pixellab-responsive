@@ -1,7 +1,7 @@
 export default function ProductTile() {
   return (
     <article className="product-tile">
-      <header className="product-tile-header">
+      <header className="product-tile-header position-relative">
         <a href="/" tile="Thread Affair Monochrome Suit">
           <picture>
             <img
@@ -11,11 +11,11 @@ export default function ProductTile() {
           </picture>
         </a>
 
-        <span className="badge badge-primary">%</span>
+        <span className="badge badge-primary d-none d-lg-inline-flex">%</span>
 
         <h1 className="product-tile-title">
           <a href="/" title="Thread Affair Monochrome Suit">
-            Thread Affair Monochrome Suit
+            <span>Thread Affair</span> <span>Monochrome</span> Suit
           </a>
         </h1>
 
@@ -26,7 +26,13 @@ export default function ProductTile() {
         </h2>
       </header>
 
-      <section className="product-tile-content">{/* add pricing */}</section>
+      <section className="product-tile-content">
+        <span className="product-catalog-price">399.00</span>
+
+        <span className="product-price">
+          Usd <span>270.00</span>
+        </span>
+      </section>
 
       <footer className="product-tile-footer">
         <button className="button button-primary">Add to Cart</button>

@@ -8,7 +8,7 @@ import Payment from '@/components/home/Payment';
 export default function Home() {
   return (
     <div className="home">
-      <header className="header container mt-lg-4">
+      <header className="header container my-lg-5">
         <Header></Header>
       </header>
 
